@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show Items</title>
+</head>
+<body>
+    <h1>Items</h1>
+    <table class="tbl">
+        <thead>
+            <tr>
+                <th>Unit</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for key in items %}
+                <tr>
+                    <td>{{key}}</td>
+                    <td>{{items[key]}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
